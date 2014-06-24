@@ -14,15 +14,15 @@ Costruzione del progetto 'stage'
 
 Editing del file 'setting.py':
 
-	$ nano pra/settings.py
+	$ nano stage/settings.py
 
 Editing del file 'urls.py':
 
-	$ nano pra/urls.py 
+	$ nano stage/urls.py 
 
 Editing del file 'models.py':
 
-	$ nano pra/models.py
+	$ nano stage/models.py
 
 Validazione del modello e test output in SQL:
 
