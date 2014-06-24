@@ -34,7 +34,7 @@ class azienda (models.Model):
 	class Meta:
                 verbose_name_plural = "Aziende"
 	def __unicode__(self):
-                return u"%s %s" % (self.denominazione, self.localita)
+                return u"%s (%s)" % (self.denominazione, self.localita)
 
 
 class formazione (models.Model):
@@ -49,7 +49,7 @@ class formazione (models.Model):
 	class Meta:
                 verbose_name_plural = "Formazioni"
 	def __unicode__(self):
-                return u"da %s a %s presso %s" % (self.data_inizio, self.data_fine, self.denominazione)
+                return u'da %s a %s argomento: %s' % (self.data_inizio, self.data_fine, self.argomento)
 
 class frequenza (models.Model):
         matricola = models.ForeignKey(studente)
@@ -58,4 +58,5 @@ class frequenza (models.Model):
 
 	class Meta:
                 verbose_name_plural = "Frequenze"
+
 
